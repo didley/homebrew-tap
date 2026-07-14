@@ -5,13 +5,13 @@
 class WtCli < Formula
   desc "Ergonomic git worktrees: create, list, switch, rename, remove"
   homepage "https://github.com/didley/wt"
-  version "0.2.4"
+  version "0.2.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/didley/wt/releases/download/v0.2.4/wt_0.2.4_darwin_amd64.tar.gz"
-      sha256 "45b38942f0d68679362c93985782bad8f3410eeb63b6221547d1518e5b3ed18f"
+      url "https://github.com/didley/wt/releases/download/v0.2.5/wt_0.2.5_darwin_amd64.tar.gz"
+      sha256 "b6bf073ab77cd7e0fa06bb3f9796e952349ae349bc866ffbd671a7f5ebf7f5f9"
 
       define_method(:install) do
         bin.install "wt"
@@ -20,8 +20,8 @@ class WtCli < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/didley/wt/releases/download/v0.2.4/wt_0.2.4_darwin_arm64.tar.gz"
-      sha256 "1e07c921694968ab517b0228676fb5ad4026dfa7fc43101a3a600b4085d77a02"
+      url "https://github.com/didley/wt/releases/download/v0.2.5/wt_0.2.5_darwin_arm64.tar.gz"
+      sha256 "53a87e87b075bd90921fb00521d829c8044cd942546064aa70a6fce6b6f32294"
 
       define_method(:install) do
         bin.install "wt"
@@ -33,8 +33,8 @@ class WtCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/didley/wt/releases/download/v0.2.4/wt_0.2.4_linux_amd64.tar.gz"
-      sha256 "48a7d3aff9755dfee122431b07419d2e7f0cd8719a44814a5db6bcf82aa1bd05"
+      url "https://github.com/didley/wt/releases/download/v0.2.5/wt_0.2.5_linux_amd64.tar.gz"
+      sha256 "61e7ac242a371eb29fd6d397da521da53811c378e03e4309acc50308ba521793"
       define_method(:install) do
         bin.install "wt"
         generate_completions_from_executable(bin/"wt", "completion")
@@ -42,8 +42,8 @@ class WtCli < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/didley/wt/releases/download/v0.2.4/wt_0.2.4_linux_arm64.tar.gz"
-      sha256 "ab7a78c6240e4f5ffda1ceab5bcfee6e271329a773a858bee2fc63ca0f8497d7"
+      url "https://github.com/didley/wt/releases/download/v0.2.5/wt_0.2.5_linux_arm64.tar.gz"
+      sha256 "58d9e0f03448cd7857dc12e4f64b6e6b0579c861633b2f7476415fc1f6044a90"
       define_method(:install) do
         bin.install "wt"
         generate_completions_from_executable(bin/"wt", "completion")
