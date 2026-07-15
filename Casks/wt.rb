@@ -3,8 +3,8 @@
 # to Casks/wt.rb in the tap. `#{version}`/`#{appdir}` are Ruby
 # interpolations evaluated by Homebrew, not placeholders.
 cask "wt" do
-  version "0.2.5"
-  sha256 "5efc598eaad48d042ac98319520f25999c80968b0dc6f546828a5eb0078afc63"
+  version "0.2.6"
+  sha256 "7c9e3fae11792370c8378667149fb50f6751999aa6cbfba469d534cc191afba4"
 
   url "https://github.com/didley/wt/releases/download/v#{version}/wt_#{version}_darwin_universal.zip"
   name "wt"
